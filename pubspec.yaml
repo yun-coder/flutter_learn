@@ -1,0 +1,45 @@
+name: my_app1
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+#  pub add [json_annotation]
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.0.0
+  web_socket_channel: ^2.4.0
+  cupertino_icons: ^1.0.2
+  english_words: ^4.0.0
+  go_router: ^10.0.0
+  provider: ^6.0.2
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+  json_annotation: ^4.8.1
+  shared_preferences: ^2.2.1
+  path_provider: ^2.1.1
+  intl: ^0.18.1
+# pub add [dev:build_runner]
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/config.json
+    - assets/images/
+
+  fonts:
+    - family: Corben,
+      fonts:
+        - asset: fonts/Corben/Corben-Bold.ttf
+          weight: 700
