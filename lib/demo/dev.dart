@@ -203,5 +203,5 @@ class ParamRoute extends StatelessWidget {
 }
 
 Future<String> loadAsset() async {
-  return await rootBundle.loadString('assets/config.json');
+  return await rootBundle.loadString('assets/json/config.json');
 }
